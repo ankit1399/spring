@@ -34,4 +34,8 @@ public class hello {
 		topicservice.update(ankit, id);
 	}
 
+	@RequestMapping(method=RequestMethod.DELETE, value="/hello/{abc}")	
+    public void deletetopic(@PathVariable("abc") String id) {
+    	 topicservice.deletetopic(id);
+    }	
 }

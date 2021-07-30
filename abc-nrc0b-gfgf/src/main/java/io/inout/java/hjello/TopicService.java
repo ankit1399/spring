@@ -32,5 +32,16 @@ public class TopicService {
 			}
 		}
 	}
+
+	public void deletetopic(String id) {
+		for (int i=0; i<topics.size();i++) {
+			if(topics.get(i).getAge().equals(id)) {
+				topics.remove(i);
+			}
+		}
+		
+	}
+
+	
 	
 }
